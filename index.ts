@@ -10,7 +10,6 @@ const PLUGIN_ID = "openclaw-azure-openai";
 const PROVIDER_KEY = "azure-openai-responses";
 const VERSION = "1.0.0";
 const PRIMARY_MODEL = "azure-openai-responses/gpt-5.4";
-
 const LOG_PREFIX = `[${PLUGIN_ID}]`;
 
 function log(level: "debug" | "info" | "warn" | "error", ...args: unknown[]) {
@@ -175,6 +174,26 @@ const azureOpenAILoggingPlugin = {
           needSetModels = true;
         }
 
+        const baseUrl = `https://${config.resource_name}.openai.azure.com/openai/v1`;
+        const apiKey = config.api_key;
+
+        // compare existing config values to avoid unnecessary writes
+        if (hasProvider) {
+          const existingProvider =
+            openClawConfig.models.providers[PROVIDER_KEY];
+
+          if (
+            existingProvider.baseUrl !== baseUrl ||
+            existingProvider.apiKey !== apiKey
+          ) {
+            log(
+              "info",
+              "Azure OpenAI provider config has changed — will update.",
+            );
+            needSetModels = true;
+          }
+        }
+
         // ---- Apply model / agent defaults if needed -----------------------
         if (needSetModels) {
           // Ensure nested structure exists
@@ -188,8 +207,8 @@ const azureOpenAILoggingPlugin = {
 
           // Provider entry
           openClawConfig.models.providers[PROVIDER_KEY] = {
-            baseUrl: `https://${config.resource_name}.openai.azure.com/openai/v1`,
-            apiKey: config.api_key,
+            baseUrl,
+            apiKey,
             api: "openai-responses",
             authHeader: false,
             models: MODEL_DEFS.map(buildModelEntry),
