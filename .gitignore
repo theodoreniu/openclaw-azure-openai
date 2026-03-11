@@ -1,0 +1,25 @@
+# Dependencies
+node_modules/
+
+# Lock files
+package-lock.json
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Environment
+.env
+.env.*
+
+# Build output
+dist/
+*.js.map
+
+version.lock

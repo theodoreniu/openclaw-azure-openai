@@ -1,0 +1,19 @@
+{
+  "id": "openclaw-azure-openai",
+  "uiHints": {},
+  "configSchema": {
+    "type": "object",
+    "additionalProperties": true,
+    "properties": {
+      "resource_name": {
+        "type": "string",
+        "description": "Azure OpenAI resource name (e.g. my-openai-resource)"
+      },
+      "api_key": {
+        "type": "string",
+        "description": "Azure OpenAI API key",
+        "sensitive": true
+      }
+    }
+  }
+}

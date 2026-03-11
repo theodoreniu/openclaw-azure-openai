@@ -1,0 +1,16 @@
+{
+  "name": "openclaw-azure-openai",
+  "version": "1.0.0",
+  "description": "OpenClaw Azure OpenAI logging plugin",
+  "type": "module",
+  "dependencies": {
+    "@sinclair/typebox": "0.34.48",
+    "openclaw": "^2026.3.8",
+    "zod": "^4.3.6"
+  },
+  "openclaw": {
+    "extensions": [
+      "./index.ts"
+    ]
+  }
+}
