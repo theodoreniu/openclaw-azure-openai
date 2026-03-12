@@ -8,8 +8,10 @@ import path from "node:path";
 
 const PLUGIN_ID = "openclaw-azure-openai";
 const PROVIDER_KEY = "azure-openai-responses";
-const VERSION = "1.0.1";
-const PRIMARY_MODEL = "azure-openai-responses/gpt-5.4";
+const VERSION: string = JSON.parse(
+  fs.readFileSync(path.join(__dirname, "package.json"), "utf-8"),
+).version;
+const PRIMARY_MODEL = `${PROVIDER_KEY}/gpt-5.4`;
 const LOG_PREFIX = `[${PLUGIN_ID}]`;
 
 function log(level: "debug" | "info" | "warn" | "error", ...args: unknown[]) {
