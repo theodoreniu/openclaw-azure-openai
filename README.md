@@ -1,4 +1,4 @@
-# Openclaw Azure OpenAI
+# OpenClaw Azure OpenAI
 
 <a href="https://www.npmjs.com/package/openclaw-azure-openai" target="_blank"><img src="https://img.shields.io/npm/v/openclaw-azure-openai.svg" alt="npm version"></a>
 <a href="https://www.npmjs.com/package/openclaw-azure-openai" target="_blank"><img src="https://img.shields.io/npm/dm/openclaw-azure-openai.svg" alt="npm downloads"></a>
@@ -28,6 +28,12 @@ An OpenClaw plugin that integrates Azure OpenAI as a model provider. It automati
 
 ```bash
 openclaw plugins install openclaw-azure-openai
+```
+
+### Update
+
+```bash
+openclaw plugins update openclaw-azure-openai
 ```
 
 ### Configuration
@@ -84,6 +90,12 @@ Alternatively, you can edit `openclaw.json` directly:
 
 ```bash
 openclaw plugins install openclaw-azure-openai
+```
+
+### 更新
+
+```bash
+openclaw plugins update openclaw-azure-openai
 ```
 
 ### 配置

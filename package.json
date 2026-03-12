@@ -1,6 +1,6 @@
 {
   "name": "openclaw-azure-openai",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "OpenClaw Azure OpenAI plugin",
   "type": "module",
   "dependencies": {
