@@ -1,7 +1,7 @@
 # Openclaw Azure OpenAI
 
-[![npm version](https://img.shields.io/npm/v/openclaw-azure-openai.svg)](https://www.npmjs.com/package/openclaw-azure-openai)
-[![npm downloads](https://img.shields.io/npm/dm/openclaw-azure-openai.svg)](https://www.npmjs.com/package/openclaw-azure-openai)
+<a href="https://www.npmjs.com/package/openclaw-azure-openai" target="_blank"><img src="https://img.shields.io/npm/v/openclaw-azure-openai.svg" alt="npm version"></a>
+<a href="https://www.npmjs.com/package/openclaw-azure-openai" target="_blank"><img src="https://img.shields.io/npm/dm/openclaw-azure-openai.svg" alt="npm downloads"></a>
 
 [English](#english) | [中文](#中文)
 
