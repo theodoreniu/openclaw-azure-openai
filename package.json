@@ -1,7 +1,7 @@
 {
   "name": "openclaw-azure-openai",
-  "version": "1.0.1",
-  "description": "OpenClaw Azure OpenAI logging plugin",
+  "version": "1.0.3",
+  "description": "OpenClaw Azure OpenAI plugin",
   "type": "module",
   "dependencies": {
     "zod": "^4.3.6"

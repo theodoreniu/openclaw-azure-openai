@@ -1,4 +1,7 @@
-# openclaw-azure-openai
+# Openclaw Azure OpenAI
+
+[![npm version](https://img.shields.io/npm/v/openclaw-azure-openai.svg)](https://www.npmjs.com/package/openclaw-azure-openai)
+[![npm downloads](https://img.shields.io/npm/dm/openclaw-azure-openai.svg)](https://www.npmjs.com/package/openclaw-azure-openai)
 
 [English](#english) | [中文](#中文)
 
@@ -31,7 +34,7 @@ openclaw plugins install openclaw-azure-openai
 
 After installation, configure the plugin with your Azure OpenAI credentials. Navigate to **Settings > Plugins > Azure OpenAI** in the OpenClaw UI:
 
-![OpenClaw Plugin Configuration](assets/config-screenshot.png)
+![OpenClaw Plugin Configuration](https://github.com/theodoreniu/openclaw-azure-openai/raw/main/assets/config-screenshot.png)
 
 | Parameter       | Required | Description                                                 |
 | --------------- | -------- | ----------------------------------------------------------- |
@@ -87,7 +90,7 @@ openclaw plugins install openclaw-azure-openai
 
 安装完成后，在 OpenClaw 管理界面中进入 **Settings > Plugins > Azure OpenAI** 配置插件：
 
-![OpenClaw 插件配置](assets/config-screenshot.png)
+![OpenClaw 插件配置](https://github.com/theodoreniu/openclaw-azure-openai/raw/main/assets/config-screenshot.png)
 
 | 参数            | 是否必填 | 说明                                               |
 | --------------- | -------- | -------------------------------------------------- |

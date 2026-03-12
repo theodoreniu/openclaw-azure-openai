@@ -8,7 +8,7 @@ import path from "node:path";
 
 const PLUGIN_ID = "openclaw-azure-openai";
 const PROVIDER_KEY = "azure-openai-responses";
-const VERSION = "1.0.0";
+const VERSION = "1.0.1";
 const PRIMARY_MODEL = "azure-openai-responses/gpt-5.4";
 const LOG_PREFIX = `[${PLUGIN_ID}]`;
 
@@ -201,7 +201,7 @@ const azureOpenAILoggingPlugin = {
           openClawConfig.models.providers ??= {};
           openClawConfig.agents ??= {};
           openClawConfig.agents.defaults ??= {};
-          openClawConfig.agents.defaults.models ??= {};
+
           openClawConfig.agents.defaults.model ??= {};
           openClawConfig.agents.defaults.model["primary"] = PRIMARY_MODEL;
 
@@ -213,12 +213,6 @@ const azureOpenAILoggingPlugin = {
             authHeader: false,
             models: MODEL_DEFS.map(buildModelEntry),
           };
-
-          // Agent default entries
-          for (const def of MODEL_DEFS) {
-            openClawConfig.agents.defaults.models[`${PROVIDER_KEY}/${def.id}`] =
-              {};
-          }
 
           // Persist changes
           try {
