@@ -1,6 +1,6 @@
 {
   "name": "openclaw-azure-openai",
-  "version": "1.0.6",
+  "version": "2026.3.13",
   "description": "OpenClaw Azure OpenAI plugin",
   "license": "MIT",
   "type": "module",
